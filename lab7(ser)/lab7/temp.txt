@@ -1,0 +1,6 @@
+fio
+dol
+01.01.2000
+goro
+пол: мужской
+E:/QT/lab7/bird.png
