@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/pics">
+        <file>add.png</file>
+        <file>exit.png</file>
+        <file>list.png</file>
+        <file>rooms.png</file>
+        <file>new_client.png</file>
+        <file>admin.png</file>
+        <file>login.png</file>
+        <file>calc.png</file>
+    </qresource>
+</RCC>

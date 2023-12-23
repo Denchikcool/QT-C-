@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>adminLogin</class>
+ <widget class="QDialog" name="adminLogin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>417</width>
+    <height>333</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Admin Login</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="pictures.qrc">
+    <normaloff>:/pics/login.png</normaloff>:/pics/login.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#adminLogin {
+	background-color:  rgb(120, 98, 98);
+}</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-13</y>
+     <width>431</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox#groupBox {
+	border: 1px solid #fcf9f4;
+	border-radius: 10px;
+	background-color:  rgb(102, 124, 79);
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>52</y>
+      <width>401</width>
+      <height>144</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout1">
+       <item>
+        <widget class="QLabel" name="label1">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Имя пользователя</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="usernameEdit">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit#usernameEdit {
+	color: #000000;
+	height: 40px;
+	padding-left: 10px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	border-radius: 8px;
+	border: 1px solid black;
+}</string>
+         </property>
+         <property name="maxLength">
+          <number>40</number>
+         </property>
+         <property name="placeholderText">
+          <string>имя пользователя</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout2">
+         <item>
+          <widget class="QLabel" name="label2">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Пароль</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="passwordEdit">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit#passwordEdit {
+	color: #000000;
+	height: 40px;
+	padding-left: 10px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	border-radius: 8px;
+	border: 1px solid black;
+}</string>
+           </property>
+           <property name="maxLength">
+            <number>40</number>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+           <property name="placeholderText">
+            <string>введите пароль</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>23</y>
+      <width>421</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ВХОД АДМИНИСТРАТОРА</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>264</y>
+      <width>401</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="loginButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton#loginButton {
+	border: none;
+	border-radius: 5px;
+	height: 35px;
+	color: #fcf9f4;
+	background-color: rgba(148, 163, 135);
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+	font-weight: bold;
+}
+QPushButton#loginButton:hover {
+	background-color: rgba(170, 181, 160);
+	font: 13pt &quot;MS Shell Dlg 2&quot;;
+	font-weight: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Войти</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exitButton">
+       <property name="font">
+        <font>
+         <family>Comic Sans MS</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#exitButton {
+	border: none;
+	border-radius: 5px;
+	height: 35px;
+	color: #fcf9f4;
+	background-color: rgba(148, 163, 135);
+	font: 11pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+}
+QPushButton#exitButton:hover {
+	background-color:  rgba(170, 181, 160);
+	font: 13pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Выйти</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="pictures.qrc"/>
+ </resources>
+ <connections/>
+</ui>

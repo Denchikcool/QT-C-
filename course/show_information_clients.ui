@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>show_information_clients</class>
+ <widget class="QWidget" name="show_information_clients">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>977</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#show_information_clients
+{
+    background-color: #a0d2eb;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Введите ФИО для поиска</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="line_search">
+       <property name="minimumSize">
+        <size>
+         <width>500</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTableView" name="clients_table">
+     <property name="styleSheet">
+      <string notr="true">QTableView#clients_table
+{
+	background-color: #e5eaf5;
+}</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="edit_data">
+       <property name="styleSheet">
+        <string notr="true">QPushButton#edit_data
+{
+    background-color: #d0bdf4;
+    border: 2px solid #000000 !important;
+    border-radius: 10px !important;
+    font-size: 14px !important;
+    height: 25px;
+    width: 140px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Редактировать</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="refresh_data">
+       <property name="styleSheet">
+        <string notr="true">QPushButton#refresh_data
+{
+    background-color: #d0bdf4;
+    border: 2px solid #000000 !important;
+    border-radius: 10px !important;
+    font-size: 14px !important;
+    height: 25px;
+    width: 140px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Обновить данные</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="remove_client">
+       <property name="styleSheet">
+        <string notr="true">QPushButton#remove_client
+{
+    background-color: #d0bdf4;
+    border: 2px solid #000000 !important;
+    border-radius: 10px !important;
+    font-size: 14px !important;
+    height: 25px;
+    width: 160px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Удалить пользователя</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exit_from_db">
+       <property name="styleSheet">
+        <string notr="true">QPushButton#exit_from_db
+{
+    background-color: #d0bdf4;
+    border: 2px solid #000000 !important;
+    border-radius: 10px !important;
+    font-size: 14px !important;
+    height: 25px;
+    width: 230px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Выйти из просмотра базы данных</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
